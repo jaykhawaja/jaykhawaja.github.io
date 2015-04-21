@@ -157,6 +157,7 @@ a:focus {
 .intro .intro-body .brand-heading {
     font-size: 64px;
 	font-style: italic;
+    text-shadow: 3px 3px #808080;
 }
 
 .intro .intro-body .intro-text {
@@ -439,7 +440,7 @@ body {
 
 
 .portfolio-modal .modal-content {
-    padding: 100px 0;
+    padding: 15px 0;
     min-height: 100%;
     border: 0;
     border-radius: 0;
