@@ -97,7 +97,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
+    outline: none;
     background-color: rgba(255,255,255,.3);
 }
 
@@ -149,6 +149,35 @@ a:focus {
     -o-background-size: cover;
 }
 
+.intro #custom_font {
+    font-size: 30px;
+    color: rgba(47, 47, 47, 1);
+    font-family: Direct du Gauche;
+    src: url('fonts/Direct du Gauche.ttf');
+}
+
+
+@media(min-width:320px) {
+    .intro #custom_font {
+    font-size: 9px;
+    
+  }
+}
+
+@media(min-width:767px) {
+    .intro #custom_font {
+    font-size: 25px;
+    
+  }
+}
+
+@media(min-width:1199px) {
+    .intro #custom_font {
+    font-size: 30px;
+    
+  }
+}
+
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
@@ -160,10 +189,9 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 21px;
 	font-family: 'Roboto',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-	font-style:italic;
+    font-weight: 300;
 	color: #00FF90;
 	
 }
@@ -179,7 +207,7 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 25px;
+        font-size: 34px;
     }
 }
 
@@ -376,6 +404,61 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
+/**
+* About Section
+*/
+#about {
+    padding-bottom: 100px;
+}
+
+#about .col-lg-7 {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+#about .col-lg-5 {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+#about .col-lg-5 {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+/** 
+* reduce padding in the col
+*/
+
+
+#about .left-image {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+#about .top-right-image {
+  width: 100%;
+  margin-bottom: 3px;
+  background-color: gray;
+}
+
+#about .bottom-right-image {
+  width: 100%;
+  margin-bottom: 3px;
+  background-color: gray;
+}
+
+
+/*******************
+* Feature Section
+********************/
+h3 {
+    font-weight: bold;
+}
+/*****************
+* Portfolio Section
+*******************/
+
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -397,7 +480,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(255, 0, 140, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -499,4 +582,36 @@ body {
 
 #contact {
     padding-bottom: 50px;
+}
+
+.tag {
+  color: #fff;
+  z-index: 100;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+  font-size: 33px;
+  font-weight:700;
+}
+
+#left_image_tag {
+ position: absolute;
+  left: 28px;
+  bottom: 40px;
+}
+
+#right_top_image_tag {
+ position: absolute;
+  left: 28px;
+  bottom: 40px;
+}
+
+#right_bottom_image_tag {
+ position: absolute;
+  left: 28px;
+  bottom: 40px;
+  
+}
+
+img {
+    width: 100%;
 }
