@@ -585,13 +585,16 @@ h3 {
 }
 
 .tag {
-  color: #fff;
-  z-index: 100;
-  padding: 15px 15px 15px 15px;
-  margin: 10px 10px 10px 10px;
-  font-size: 33px;
-  font-weight:700;
-}
+    color: #fff;
+    z-index: 100;
+    padding: 15px 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
+    font-size: 2em;
+    font-weight:700;
+ }
+
+
+
 
 #left_image_tag {
  position: absolute;
