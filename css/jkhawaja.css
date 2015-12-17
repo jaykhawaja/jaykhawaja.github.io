@@ -584,11 +584,16 @@ h3 {
     padding-bottom: 50px;
 }
 
-.tag {
+.image_tag {
+ position: absolute;
+  margin-left: 28px;
+  margin-right: 28px;
+  bottom: 40px;
+}
+
+.tag_tag--text {
     color: #fff;
     z-index: 100;
-    padding: 15px 15px 15px 15px;
-    margin: 10px 10px 10px 10px;
     font-size: 2em;
     font-weight:700;
  }
@@ -596,24 +601,6 @@ h3 {
 
 
 
-#left_image_tag {
- position: absolute;
-  left: 28px;
-  bottom: 40px;
-}
-
-#right_top_image_tag {
- position: absolute;
-  left: 28px;
-  bottom: 40px;
-}
-
-#right_bottom_image_tag {
- position: absolute;
-  left: 28px;
-  bottom: 40px;
-  
-}
 
 img {
     width: 100%;
