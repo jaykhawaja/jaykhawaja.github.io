@@ -71,12 +71,16 @@
 
     <!-- Intro Header -->
     <header class="intro">
+        <!-- Render threejs -->
+        <div id="jamout3dRender">
+        </div>
+
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9 col-md-offset-1">
-                        <h1 class="brand-heading">J KHAWAJA labs</h1>
-                        <p class="intro-text">We build <span id="custom_font">CUSTOM & BEAUTIFUL</span> websites</p>
+                    <div class="col-md-12">
+                        <h1 class="brand-heading">J KHAWAJA</h1>
+                        <p class="intro-text">I help businesses grow by re-thinking their design</p>
 
 
                     </div>
@@ -84,99 +88,6 @@
             </div>
         </div>
     </header>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section">
-      <div class="row text-center"> 
-          <h1>Tell us about your project</h1>
-      </div>
-      <div class="row"> 
-          <div class="col-lg-7">
-         <div id="container-fluid">
-             <div class="left-image"> 
-               <img src="img/about/left-image.png"  alt="Business">
-                 <div class="image_tag">
-                   <div id="container">
-                     <span class="tag_tag--text">Does your business need a facelift?</span>
-                   </div>
-              </div>
-             </div>
-          </div>
-        </div>
-          <div class="col-lg-5">
-              <div id ="container-fluid">
-                 <div class="top-right-image">
-                   <img src="img/about/top-right.png"  alt="Personal">
-                    <div class="image_tag">
-                       <div id="container">
-                         <span class="tag_tag--text">Are you working on something creative?</span>
-                       </div>
-                    </div>
-                 </div>
-               </div>
-            </div>
-          <div class="col-lg-5">
-              <div id="container-fluid">
-                 <div class="bottom-right-image">
-                    <img src="img/about/bottom-right.png" alt="Occasion"> 
-                    <div class="image_tag">
-                      <div id="container">
-                         <span class="tag_tag--text">Do you have a special event coming up?</span>
-                      </div>
-                    </div>
-                 </div>
-              </div>
-          </div>
-      </div>
-      
-    </section>
-    <!-- Feature List -->
-    <section id="features" class="container content-section">
-      <div class="row text-center"> 
-          <h1>Let us do all the work for you!</h1>
-          <br>
-      </div>
-      <div class="row"> 
-          <div class="col-lg-3">
-             <h3>Content</h3>
-             <p>Our professional writer will research and write content so you don't have to!</p>              
-          </div>
-          <div class="col-lg-3">
-             <h3>Code Ownership</h3>
-             <p>We commit high quality code that is owned by you</p>
-           </div>
-
-           <div class="col-lg-3">
-             <h3>Custom Domain</h3>
-             <p>If you don't have a domain already, we'll recommend and get one for you!</p>
-           </div>
-
-           <div class="col-lg-3">
-             <h3>Website Analytics</h3>
-             <p>Analytics is integrated so you can find out and track who's visiting your website</p>
-           </div>
-      </div>
-       <div class="row"> 
-          <div class="col-lg-3">
-             <h3>Branding</h3>
-             <p>We brand the project to reflect your project values</p>              
-          </div>
-          <div class="col-lg-3">
-             <h3>High-resolution Photography</h3>
-             <p>We use high quality images to give your project a professional look</p>
-           </div>
-
-           <div class="col-lg-3">
-             <h3>Custom E-mail</h3>
-             <p>Get emails delivered to example@yourbusiness.com</p>
-           </div>
-
-           <div class="col-lg-3">
-             <h3>Logo Design</h3>
-             <p>Need a logo? No problem! We'll design a custom logo based on your projects requirements</p>
-           </div>
-      </div>
-    </section>
 
 
     
@@ -239,8 +150,8 @@
             <div class="col-lg-8 col-lg-offset-2">
 
                 <h2>Get in touch</h2>
-                <p> We have worked with clients on: websites, web applications, branding, business card design, logo design, company profile design, flyer design, brochure design and social media page design </p>
-                <p>Our founder has extensive experience in building user centric designs for startups and has won numerous hacking competitions with <a href="http://thenextweb.com/events/2011/08/24/photo-hack-day-proves-new-york-citys-strong-developer-talent/"> Nostalgiapp </a> and <a href="http://blog.akshaysharma.com/2011/10/start-up-weekend-chicago.html">jamout</a>. Please contact us to view further work examples and to discuss your project:</p>
+                <p> I offer design and development services for web applications, web sites, business cards, logos, company profile, flyers, brochures and social media pages. </p>
+                <p>I'm currently working on an online venue for music creators to perform for their fans. Check it out at <a href="https://jamout.tv">Jamout</a>. <br><br> I'm also <span id="italic">available for hire.</span> Contact me to discuss your project:</p>
                 <p><a href="mailto:jahan_z3bk@hotmail.com">hello at jkhawaja dot com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
@@ -400,6 +311,10 @@
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <script src="js/three.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/JamoutThree_labs.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/jkhawaja.js"></script>

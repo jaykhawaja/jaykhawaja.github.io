@@ -28,7 +28,7 @@ h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: 'Roboto',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
+    font-weight: 800;
     letter-spacing: 1px;
 }
 
@@ -64,6 +64,10 @@ a:focus {
     font-weight: 400;
 }
 
+#italic {
+    font-style: italic;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -71,6 +75,10 @@ a:focus {
     font-family: 'Roboto',"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 300;
     background-color: #fff;
+    animation-name: fadeIn;
+    animation-iteration-coutn: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1500ms;
 }
 
 .navbar-custom .navbar-brand {
@@ -93,7 +101,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #00FF90;
+    color: #FF7BF5;
 }
 
 .navbar-custom .nav li.active {
@@ -142,7 +150,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #000;
-    background-color: #fff;
+    /*background-color: #fff;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -186,14 +194,29 @@ a:focus {
 .intro .intro-body .brand-heading {
     font-size: 64px;
 	font-style: italic;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1000ms;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .intro .intro-body .intro-text {
     font-size: 21px;
 	font-family: 'Roboto',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
-	color: #00FF90;
-	
+	color: #606060;
+    animation-name: fadeIn;
+    animation-iteration-coutn: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1300ms;
 }
 
 @media(min-width:767px) {
@@ -203,7 +226,7 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 151px;
+        font-size: 200px;
     }
 
     .intro .intro-body .intro-text {
@@ -287,6 +310,7 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .download-section {
@@ -336,8 +360,8 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #00FF90;
-    color: #00FF90;
+    border: 1px solid #FF7BF5;
+    color: #FF7BF5;
     background-color: transparent;
 }
 
@@ -480,7 +504,7 @@ h3 {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(153, 250, 255, 0.8);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -581,7 +605,9 @@ h3 {
 }
 
 #contact {
-    padding-bottom: 50px;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color: rgba(255, 255, 255, 0.52);
 }
 
 .image_tag {
@@ -599,9 +625,20 @@ h3 {
  }
 
 
-
-
+/*#features {
+    background: #fff;
+}
+*/
 
 img {
     width: 100%;
+}
+
+
+#jamout3dRender{
+    z-index:-100;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
 }
